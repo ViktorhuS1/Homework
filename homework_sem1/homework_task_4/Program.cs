@@ -14,30 +14,10 @@ int second_number = Convert.ToInt32(Console.ReadLine());
 Console.Write("Введите третье число: ");
 int third_number = Convert.ToInt32(Console.ReadLine());
 
-
-if(first_number >= second_number)
-{
-    if(first_number > third_number)
-    {
-        Console.Write("Максимальное число: ");
-        Console.Write(first_number);
-    }
-}
-if(second_number > first_number)
-{
-    if(second_number > third_number)
-    {
-        Console.Write("Максимальное число: ");
-        Console.Write(second_number);
-    }
-}
-if(third_number >= first_number)
-{
-    if(third_number >= second_number)
-    {
-        Console.Write("Максимальное число: ");
-        Console.Write(third_number);
-    }
-}
-
+int max = first_number;
+if(first_number > max) max = first_number;
+if(second_number > max) max = second_number;
+if(third_number > max) max = third_number;
+Console.WriteLine("Максимальное число: ");
+Console.Write(max);
 
