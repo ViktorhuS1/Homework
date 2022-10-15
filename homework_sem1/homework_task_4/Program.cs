@@ -15,7 +15,7 @@ Console.Write("Введите третье число: ");
 int third_number = Convert.ToInt32(Console.ReadLine());
 
 
-if(first_number > second_number)
+if(first_number >= second_number)
 {
     if(first_number > third_number)
     {
@@ -31,9 +31,9 @@ if(second_number > first_number)
         Console.Write(second_number);
     }
 }
-if(third_number > first_number)
+if(third_number >= first_number)
 {
-    if(third_number > second_number)
+    if(third_number >= second_number)
     {
         Console.Write("Максимальное число: ");
         Console.Write(third_number);
