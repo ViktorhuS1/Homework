@@ -4,7 +4,7 @@
 
 Console.WriteLine("Введите числа, после того как ввели, нажмите Enter: ");
 int i = 0;
-int[] array = new int[10];
+int[] array = new int[100];
 
 while(i < array.Length)
 {
@@ -29,4 +29,4 @@ int CountPositive(int[] a)
 }
 int count = CountPositive(array);
 
-Console.WriteLine($"Чисел больше 0 - {count}");
+Console.Write($"Чисел больше 0 - {count}");
